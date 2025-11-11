@@ -1,0 +1,5 @@
+.container { display: grid; grid-template-columns: 1fr 320px; height: 100vh; }
+.graph { border-right: 1px solid #1c254a; }
+.sidebar { background: var(--panel); padding: 16px; overflow: auto; }
+.header { padding: 8px 12px; border-bottom: 1px solid #1c254a; display: flex; justify-content: space-between; align-items: center; }
+.toolbar { display: flex; gap: 8px; }

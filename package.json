@@ -11,6 +11,7 @@
 		"preview": "vite preview"
 	},
 	"dependencies": {
+		"@xyflow/react": "^12.9.2",
 		"@zenml-io/react-component-library": "^0.24.0",
 		"react": "^18",
 		"react-dom": "^18"

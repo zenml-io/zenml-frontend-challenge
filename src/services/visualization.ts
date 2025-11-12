@@ -1,5 +1,6 @@
 import type { Edge } from "@xyflow/react";
-import type { Dependency, Step, StepNode } from "../types/pipeline";
+import type { StepNode } from "../types/nodes";
+import type { Step, Dependency } from "../types/pipeline-schema";
 
 export function getNodes(steps: Step[]): StepNode[] {
 	return steps.map((step) => {

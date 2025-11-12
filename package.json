@@ -14,7 +14,8 @@
 		"@xyflow/react": "^12.9.2",
 		"@zenml-io/react-component-library": "^0.24.0",
 		"react": "^18",
-		"react-dom": "^18"
+		"react-dom": "^18",
+		"zod": "^4.1.12"
 	},
 	"devDependencies": {
 		"@eslint/js": "^9.39.1",

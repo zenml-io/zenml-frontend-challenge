@@ -1,15 +1,15 @@
-import { useMemo } from "react";
 import { PipelineViz } from "./components/pipeline-viz";
-import { pipeline } from "./data/pipeline";
+import pipelineData from "./data/pipeline.json";
 import { getEdges, getNodes } from "./services/visualization";
+import { pipelineSchema } from "./types/pipeline-schema";
 
 export function App() {
-	const initialNodes = useMemo(() => getNodes(pipeline.steps), []);
-	const initialEdges = useMemo(() => getEdges(pipeline.dependencies), []);
+	const pipeline = pipelineSchema.parse(pipelineData);
+
+	const initialNodes = getNodes(pipeline.steps);
+	const initialEdges = getEdges(pipeline.dependencies);
 
 	return (
-		<div className="flex h-dvh w-full">
-			<PipelineViz initialNodes={initialNodes} initialEdges={initialEdges} />
-		</div>
+		<PipelineViz initialNodes={initialNodes} initialEdges={initialEdges} />
 	);
 }

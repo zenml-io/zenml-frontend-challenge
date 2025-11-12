@@ -1,6 +1,6 @@
 import { Handle, Position, type NodeProps } from "@xyflow/react";
 import { Box } from "@zenml-io/react-component-library";
-import type { StepNode as StepNodeType } from "../types/pipeline";
+import type { StepNode as StepNodeType } from "../types/nodes";
 
 type Props = NodeProps<StepNodeType>;
 
